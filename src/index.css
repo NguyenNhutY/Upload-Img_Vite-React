@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+.animate {
+    animation: move 2s linear infinite alternate;
+    top: 0;
+    bottom: 0;
+}
+
+.show {
+     opacity: 1;
+}
+
+@keyframes move {
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: calc(100% - 80px);
+    }
+}
